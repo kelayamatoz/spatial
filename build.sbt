@@ -27,10 +27,10 @@ val base = Seq(
     //"commons-io" % "commons-io" % "2.5"
   ),
 
-  pgpPassphrase := {
-   try {Some(scala.io.Source.fromFile(Path.userHome / ".sbt" / "pgp.credentials").mkString.trim.toCharArray)}
-   catch { case _:Throwable => None }
-  },
+  // pgpPassphrase := {
+  //  try {Some(scala.io.Source.fromFile(Path.userHome / ".sbt" / "pgp.credentials").mkString.trim.toCharArray)}
+  //  catch { case _:Throwable => None }
+  // },
 
   /** Scalac Options **/
   scalacOptions += "-target:jvm-1.8",               // JVM 1.8
