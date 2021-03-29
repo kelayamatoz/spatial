@@ -268,7 +268,7 @@ trait PlasticineTest extends DSLTest {
               wd = IR.config.genDir + "/plastisim")
           else
             Pass
-          ) >>
+          ) // >>
 //        scommand(
 //          s"maketst",
 //          s"$timer make ideal -j16 ${if (fast) "DEBUG=1" else "DEBUG=0"}".split(" "),
